@@ -9,16 +9,58 @@
           list-style-type: none;
           margin: 0;
           padding: 0;
-          overflow: hidden;
-          border: 1px solid #e7e7e7;
-          background-color: #f3f3f3;
+          overflow: visible;
+          background-color: #333;
+          position: sticky;
+          top: 0px;
         }
         
         li {
-          float: left;
+          display: inline-block;
         }
         
-        li a {
+        li a, .dropbtn {
+      display: inline-block;
+      padding: 14px 16px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+ 
+    li.dropdown {
+      display: inline-block;
+    }
+*/
+    .dropdown-content {
+    
+     
+      display: none; 
+      position: absolute; 
+    
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1; 
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block; 
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+
+    .dropdown:hover .dropdown-content {
+    }
+
+        li a, .dropbtn{
           display: block;
           color: #666;
           text-align: center;
@@ -45,6 +87,8 @@
       </ul>
     <h1>환영합니다.</h1>
     <h2>민혜원의 사이트입니다.</h2>
-    <img src="./image/school.jpg" alt="대학생활 사진">
+    <img src="./image/대학생활.jpg" alt="대학생활 사진" width="500" height="350">
+    <br>
+    <img src="./image/청운대.jpg" alt="청운대학교 로고 사진" width="500" height="350">
 </body>
 </html>  
